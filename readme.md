@@ -9,4 +9,7 @@ Repo contenente i file utili a lanciare una immagine docker all'interno di due c
 - docker-compose up = caricare l'immagine (se non ci sono state modifiche agli altri file).
 - docker-compose down = spegnere l'immagine
 
+## NOTA
+Appena scaricata l'immagine creare manualmente una cartella all'interno della cartella "container" dal nome "src".
+
 Aggiornamento: 8/3/22
