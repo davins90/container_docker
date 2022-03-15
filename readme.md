@@ -1,15 +1,17 @@
 # Info
 
-Repo contenente i file utili a lanciare una immagine docker all'interno di due container. Sono presenti:
-- container 1: jupyter lab basato sull'iummagine data science e python 3.9.2 --> porta:8080
+The goal of this image is to create a Jupyter environment useful to perform analysis related to the world of data science and (eventually) build a web app using the framework proposed by Streamlit
+
+Repo containing files useful to launch a docker image with two containers inside. These are:
+- container 1: jupyter lab based on data science e python 3.9.2 images --> porta:8080
 - container 2: demo streamlit --> porta:8501
 
 # Comandi
-- docker-compose up -d --build = costruisce l'immagine per la prima volta installando le librerie. Da usare al primo lancio e ogni volta che viene cambiato il file dei requirements.
-- docker-compose up = caricare l'immagine (se non ci sono state modifiche agli altri file).
-- docker-compose down = spegnere l'immagine
+- docker-compose up -d --build = builds the image for the first time by installing the libraries. Use it on first launch and every time the requirements file is changed.
+- docker-compose up = upload the image (if no changes have been made to the other files)
+- docker-compose down = turn off the image.
 
-## NOTA
-Appena scaricata l'immagine creare manualmente una cartella all'interno della cartella "container" dal nome "src".
+## Notes
+The name of the streamlit application **must** be "app.py".
 
-Aggiornamento: 8/3/22
+Aggiornamento: 15/3/22
