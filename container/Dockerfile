@@ -4,7 +4,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 WORKDIR /src
-COPY /src /src
+COPY . /src
 
 LABEL mainteiner="Daniele D'Avino daniele.davino@live.it"
 LABEL version="1.0"
